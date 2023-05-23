@@ -1,0 +1,89 @@
+.bartender {
+  margin-top: 3rem;
+  border-radius: 20px;
+}
+.value {
+  color: white;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  height: 140px;
+  border: 2px solid rgba(255, 95, 31, 0.3);
+  box-shadow: rgba(255, 95, 31, 0.3) 0px 3px 8px;
+  border-radius: 20px;
+}
+.our_values {
+  color: white;
+  margin-top: 4rem;
+  text-align: center;
+}
+.values {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-self: center;
+}
+.value h3 {
+  margin-top: 9px;
+}
+.value p {
+  font-weight: 200;
+  padding: 0 1rem;
+  margin-top: 0.6rem;
+}
+@media screen and (min-width: 768px) {
+  .bartender {
+    margin-top: 20rem;
+  }
+  .values {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-self: center;
+  }
+  .our_values {
+    color: white;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .our_values h2 {
+    font-size: 3rem;
+  }
+  .value {
+    color: white;
+    width: 30%;
+    height: 280px;
+    border: 2px solid rgba(255, 95, 31, 0.3);
+    box-shadow: rgba(255, 95, 31, 0.3) 0px 3px 8px;
+    border-radius: 20px;
+  }
+
+  .value:nth-child(1) {
+    margin-left: 1rem;
+  }
+  .value:nth-child(3) {
+    margin-right: 1rem;
+  }
+  .value p {
+    font-family: "Nunito", sans-serif;
+    width: 80%;
+    margin: auto;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .value h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 450px) {
+  .bartender {
+    margin-top: 20rem;
+  }
+}
