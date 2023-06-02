@@ -4,22 +4,24 @@ import Lab from "../CocktailLab/Lab.js";
 // import CocktailLab from "../../assets/cocktailAccent.svg";
 function Header() {
   return (
-    <div class="container">
-      <div class="lab_bg">
-        <Lab />
+    <div className="container">
+      <div className="lab_bg">
+        <object>
+          <Lab />
+        </object>
       </div>
       <header>
-        <div class="header_text">
-          <h2 class="welcome">Welcome to</h2>
-          <div class="h1_animation">
+        <div className="header_text">
+          <h2 className="welcome">Welcome to</h2>
+          <div className="h1_animation">
             <h1>LiquidLab</h1>
             <h1>LiquidLab</h1>
           </div>
-          <h3 class="premier_bar">
+          <h3 className="premier_bar">
             The premier bar consulting firm that helps you take your bar to the
             next level!
           </h3>
-          <p class="header_p">
+          <p className="header_p">
             We specialize in creating unique and unforgettable bar experiences,
             we know that every bar is unique. That’s why we take a customized
             approach to every project, tailoring our services to meet your

@@ -5,12 +5,12 @@ import Bartender from "../../assets/bartender.jpeg";
 function Values() {
   return (
     <div>
-      <img src={Bartender} class="bartender" />
-      <div class="our_values">
+      <img src={Bartender} className="bartender" />
+      <div className="our_values">
         <h2>Our Values</h2>
       </div>
-      <div class="values">
-        <div class="value">
+      <div className="values">
+        <div className="value">
           <h3>Innovation</h3>
           <p>
             Lifeline of progress, driving us to think creatively, challenge the
@@ -18,7 +18,7 @@ function Values() {
             possible
           </p>
         </div>
-        <div class="value">
+        <div className="value">
           <h3>Creativity</h3>
           <p>
             Spark that ignites our imagination and fuels our ability to think
@@ -26,7 +26,7 @@ function Values() {
             solutions to problems
           </p>
         </div>
-        <div class="value">
+        <div className="value">
           <h3>Collaboration</h3>
           <p>
             Cornerstone of success, enabling us to leverage the strengths of
