@@ -11,10 +11,10 @@ function Header() {
       <header>
         <div className="header_text">
           <h2 className="welcome">{t("welcome")}</h2>
-          {/* <div className="h1_animation">
+          <div className="h1_animation">
             <h1>LiquidLab</h1>
             <h1>LiquidLab</h1>
-          </div> */}
+          </div>
           <h3 className="premier_bar">{t("premier_bar")}</h3>
           <p className="header_p">{t("we_specialize")}</p>
         </div>
