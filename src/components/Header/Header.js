@@ -8,9 +8,7 @@ function Header() {
   return (
     <div className="container">
       <div className="lab_bg">
-        <svg>
-          <Lab />
-        </svg>
+        <Lab />
       </div>
       <header>
         <div className="header_text">
