@@ -7,7 +7,9 @@ function Header() {
   const { t } = useTranslation();
   return (
     <div className="container">
-      {/* <div className="lab_bg"><Lab /></div> */}
+      <div className="lab_bg">
+        <Lab />
+      </div>
       <header>
         <div className="header_text">
           <h2 className="welcome">{t("welcome")}</h2>
