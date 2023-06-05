@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 const Contact = () => {
   const form = useRef();
-
+  const { t } = useTranslation();
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,39 +19,39 @@ const Contact = () => {
 
   return (
     <div className="contact__content">
-      <h3 className="contact__title">Write me your project</h3>
+      <h3 className="contact__title">{t("project_h")}</h3>
 
       <form ref={form} onSubmit={sendEmail} className="contact__form">
         <div className="contact__form-div">
-          <label className="contact__form-tag">Name</label>
+          <label className="contact__form-tag">{t("name")}</label>
           <input
             type="text"
             name="name"
             className="contact__form-input"
-            placeholder="Insert your name"
+            placeholder={t("name_insert")}
           />
         </div>
         <div className="contact__form-div">
-          <label className="contact__form-tag">Mail</label>
+          <label className="contact__form-tag">{t("mail")}</label>
           <input
             type="email"
             name="email"
             className="contact__form-input"
-            placeholder="Insert your email"
+            placeholder={t("mail_insert")}
           />
         </div>
         <div className="contact__form-div contact__form-area">
-          <label className="contact__form-tag">Project</label>
+          <label className="contact__form-tag">{t("project")}</label>
           <textarea
             name="project"
             cols="30"
             rows="10"
             className="contact__form-input"
-            placeholder="Write your project"
+            placeholder={t("project_write")}
           ></textarea>
         </div>
         <button className="button button--flex">
-          Send Message
+          {t("send")}
           <svg
             className="button__icon"
             xmlns="http://www.w3.org/2000/svg"

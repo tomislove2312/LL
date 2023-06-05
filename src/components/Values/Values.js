@@ -1,38 +1,28 @@
 import React from "react";
 import "./values.css";
 import Bartender from "../../assets/bartender.jpeg";
+import { useTranslation } from "react-i18next";
 
 function Values() {
+  const { t } = useTranslation();
   return (
     <div>
       <img src={Bartender} className="bartender" />
       <div className="our_values">
-        <h2>Our Values</h2>
+        <h2>{t("values")}</h2>
       </div>
       <div className="values">
         <div className="value">
-          <h3>Innovation</h3>
-          <p>
-            Lifeline of progress, driving us to think creatively, challenge the
-            status quo and push beyond the boundaries of what one would deem
-            possible
-          </p>
+          <h3>{t("innovation")}</h3>
+          <p>{t("lifeline")}</p>
         </div>
         <div className="value">
-          <h3>Creativity</h3>
-          <p>
-            Spark that ignites our imagination and fuels our ability to think
-            outside the box. Process of generating new ideas and finding
-            solutions to problems
-          </p>
+          <h3>{t("creativity")}</h3>
+          <p>{t("spark")}</p>
         </div>
         <div className="value">
-          <h3>Collaboration</h3>
-          <p>
-            Cornerstone of success, enabling us to leverage the strengths of
-            others to achieve common goals. By working together we can achieve
-            our goals
-          </p>
+          <h3>{t("collaboration")}</h3>
+          <p>{t("cornerstone")}</p>
         </div>
       </div>
     </div>

@@ -13,14 +13,7 @@ function ShowBlog(props, p) {
             className={c.cardpost__image}
             style={{ backgroundImage: `url(${props.thumbnail})` }}
           >
-            <div className={c.authorimg}>
-              <a
-                href={props.profileurl}
-                rel="noopener noreferrer"
-                target="_blank"
-                style={{ backgroundImage: `url(${props.avtar})` }}
-              ></a>
-            </div>
+            <div className={c.authorimg}></div>
           </div>
 
           <div className="card-body">

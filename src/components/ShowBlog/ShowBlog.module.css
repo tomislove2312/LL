@@ -16,7 +16,9 @@
   border: none;
   border-radius: 0.625rem;
 }
-
+a {
+  text-decoration: none;
+}
 .cardpost__image {
   position: relative;
   min-height: 13.3125rem;
